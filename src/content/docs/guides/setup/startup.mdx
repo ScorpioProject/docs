@@ -1,0 +1,50 @@
+---
+title: First boot
+description: Your first boot of ScorpioBot
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+After configuring the bot token and guild ID, you are finally ready to boot the bot. Keep in mind that in its current form
+there are only 4 commands loaded and not too much else, but it's enough to get things started.
+
+## Starting the bot
+To start the bot process, execute `start` script using your package manager.
+
+<Tabs syncKey="manager">
+  <TabItem label="npm">
+    ```bash
+    npm run start
+    ```
+  </TabItem>
+  <TabItem label="Yarn">
+    ```bash
+    yarn start
+    ```
+  </TabItem>
+</Tabs>
+
+:::note[Managed Hosting note]
+If you are using a managed hosting and [properly configured the startup as mentioned](/guides/setup/install#managed-hosting-instructions)
+you should be able to just click a **Start** button on the server's dashboard.
+:::
+
+After loading the `core` module, the bot should print the startup banner confirming that ScorpioBot is now active.
+
+If you didn't invite the bot to your server yet, there also should be a message printed in the console with an invitation link.
+After clicking it, you should be able to add your bot to the guild you configured it with using `GUILD_ID` setting.
+
+:::tip
+It may be required to restart the bot after inviting it to ensure everything loaded properly.
+:::
+
+## Using the commands
+After loading, there should be a few commands loaded including one in the context menu, which will show after right-clicking
+any user and selecting **Apps** option.
+
+## Configuration files
+Files with commands and messages configuration will be available in `config` and `language` folders.
+
+## Your bot is ready to go!
+Congratulations, you properly set up your instance of ScorpioBot. You can now check out some of the publicly available modules
+or read more documentation on how to use your bot.

@@ -1,0 +1,88 @@
+---
+title: Installation
+description: Installation process of ScorpioBot
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+After [preparing your environment](/guides/setup/prerequisites) and [setting up your developer app](/guides/setup/app)
+you can proceed with installing the bot itself and start setting it up for your server.
+
+## Ways to install the bot
+There are two ways of setting up the bot. **using a pre-built bundle** can be easier for a beginner or for hosting on managed
+hosting provider. If you want to customize the bot, we do recommend **building from source** as it allows for easier use of
+our developer features.
+
+## Using a pre-built bundle
+To use the pre-build bundle, first download it from [GitHub Release](https://github.com/ScorpioProject/bot/releases/latest) page or [BuiltByBit](#).
+After downloading, upload it to your remote host or place in a local directory.
+
+:::note[Managed Hosting Provider]
+If you are using **managed hosting provider**, please skip to [managed provider instructions](#managed-hosting-instructions).
+:::
+
+### Installing the dependencies
+For the bot to work, you need to download its dependencies, which can be done using a package manager.
+
+<Tabs syncKey="manager">
+  <TabItem label="npm">
+    ```bash
+    npm install
+    ```
+  </TabItem>
+  <TabItem label="Yarn">
+    ```bash
+    yarn
+    ```
+  </TabItem>
+</Tabs>
+
+### Managed hosting instructions
+If you are using a **managed hosting provider** your setup process will differ from the above. In most cases, especially when
+your provider is using a [Pterodactyl panel](https://pterodactyl.io/) you will need to:
+1. Go into **Startup** or **Settings**
+2. Change the **Main bot file** to `build/index.js`
+
+Installation of dependencies will happen automatically before first boot, so you don't need to worry about that.
+
+### Bot configuration
+After preparing the bot for startup, you are ready to configure your bot. Please go to [Configuration](/guides/setup/configuration)
+page to proceed with the installation.
+
+## Building from source
+If you do have control over the environment or want to develop for ScorpioBot, we recommend building from source.
+
+### Downloading the source code
+To download the source code, we recomment using [Git](https://git-scm.com/) and cloning into the repository directly.
+```bash
+git clone https://github.com/ScorpioProject/bot.git
+```
+
+This will also let you stay up to date with new releases without the hassle of downloading new code manually.
+
+### Build the bot
+In order to build the bot, run the `build` script with your package manager.
+
+<Tabs syncKey="manager">
+  <TabItem label="npm">
+    ```bash
+    npm run build
+    ```
+  </TabItem>
+  <TabItem label="Yarn">
+    ```bash
+    yarn build
+    ```
+  </TabItem>
+</Tabs>
+
+After a moment the `build` folder should be created containing built project files.
+
+:::note
+The `build` script is the only **proper** way to build the bot. Running `tsc` command manually is not supported and will
+throw errors while trying to load any modules.
+:::
+
+### Bot configuration
+After preparing the bot for startup, you are ready to configure your bot. Please go to [Configuration](/guides/setup/configuration)
+page to proceed with the installation.
