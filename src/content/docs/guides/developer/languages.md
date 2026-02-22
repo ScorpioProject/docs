@@ -36,6 +36,9 @@ There are two available values:
 - `BASE_LANGAGE` which is a **single** language code as the **default**
 - `AVAILABLE_LANGUAGES` is a **list** of language codes, separated by comas which tells the bot which languages are supported
 
+For available locales list, check out [discord.js docs](https://discordjs.dev/docs/packages/discord.js/main/Locale:Enum).
+You need to use the **values** like `en-US`, `pl` etc.
+
 ### Multilanguage workflow
 Message language is based on the locale of their Discord Client. If they have `English, US` selected, their locale will be `en-US`.
 If the module properly supports language files, and it's listed as available in the `.env` file, they will see all commands in their language
