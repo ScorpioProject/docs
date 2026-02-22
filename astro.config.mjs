@@ -31,6 +31,16 @@ export default defineConfig({
                   'guides/setup/configuration',
                   'guides/setup/startup',
                 ]
+              },
+              {
+                label: 'Developer Guide',
+                items: [
+                  'guides/developer',
+                  'guides/developer/events',
+                  'guides/developer/commands',
+                  'guides/developer/configs',
+                  'guides/developer/languages',
+                ],
               }
 						],
 					},
