@@ -3,7 +3,7 @@ title: Language files
 description: Add language files to your module
 ---
 
-If you have a multilingual community or want to be able to easily change messages sent with your addon, you may be
+If you have a multilingual community or want to be able to easily change messages sent with your module, you may be
 interested in the **language files** system.
 
 You can do it with `language` class exported from `src/handlers/languages.js`.

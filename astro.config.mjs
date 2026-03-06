@@ -44,6 +44,21 @@ export default defineConfig({
               }
 						],
 					},
+          {
+            label: 'Community',
+            link: '/community',
+            icon: 'comment',
+            items: [
+              {
+                label: 'Introduction',
+                items: [
+                  'community',
+                  'community/guidelines',
+                  'community/marketplaces'
+                ],
+              },
+            ]
+          },
 					{
 						label: 'Reference',
 						link: '/reference',
