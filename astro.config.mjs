@@ -6,7 +6,9 @@ import starlightSidebarTopics from 'starlight-sidebar-topics';
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [
+  site: 'https://scorpioproject.github.io',
+  base: '/docs',
+  integrations: [
 		starlight({
 			title: 'ScorpioBot',
 			description: 'Documentation for the Scorpio project.',
