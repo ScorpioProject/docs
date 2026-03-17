@@ -88,7 +88,7 @@ After generation, you will not be able to get comments from the generated YAML f
 ## Registering your language file
 After you are done with writing your language file, you need to **register it**. You could notice, that we are exporting the `commandsLanguage`
 containing our language file code.
-```ts title="index.ts" {11} ins="[commandsLanguage]"
+```ts title="index.ts" {11} ins="commandsLanguage"
 import commandsLanguage from "./languages/commands.js";
 
 const moduleData = {

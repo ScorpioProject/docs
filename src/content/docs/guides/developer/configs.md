@@ -58,7 +58,7 @@ After generation, you will not be able to get comments from the generated YAML f
 ## Registering your config
 After you are done with writing your config, you need to **register it**. You could notice, that we are exporting the `generalConfig`
 containing our config's code.
-```ts title="index.ts" {9} ins="[generalConfig]"
+```ts title="index.ts" {9} ins="generalConfig"
 import generalConfig from "./configs/general.js";
 
 const moduleData = {

@@ -58,7 +58,7 @@ You can use `interaction.reply()` function for that.
 After you are done with implementing your command, you need to **register it**. You could notice, that we are exporting the `pingCommand`
 containing our command's code.
 This exported command should be placed in the module index file, as shown below.
-```ts title="index.ts" {7} ins="[pingCommand]"
+```ts title="index.ts" {7} ins="pingCommand"
 import pingCommand from "./commands/ping.js";
 
 const moduleData = {
