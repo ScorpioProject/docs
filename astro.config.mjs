@@ -15,6 +15,10 @@ export default defineConfig({
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/ScorpioProject/bot' },
 				{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/GvyuDDFeZU' }
 			],
+      editLink: {
+        baseUrl: 'https://github.com/ScorpioProject/docs/edit/main/',
+      },
+      lastUpdated: true,
 			plugins: [
 				starlightSidebarTopics([
 					{
